@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --color-white:      #FFFFFF;
+    --color-gray-0:     #F5F5F5;
+    --color-gray-1:     #E6E6E6;
+    --color-gray-2:     #BEBEBE;
+    --color-gray-3:     #616365;
+    --color-light-dark: #222529; 
+    --color-dark:       #23262A;
+    --color-red:        #FF7373;
+    --color-red-hover:  #ff0000;
+
+    --font-poppins: 'poppins', 'sans-serif';
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold:600;
+    --font-weight-bold: 700;
+    --font-weight-extrabold: 800;
+}
+
+/* GENERAL */
+html, body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-regular);
+    color: var(--color-dark);
+}
+
+/* Top menu start */
+.top-menu {
+    background-color: var(--color-gray-1);
+}
+
+.top-menu .top-menu-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Top menu brand */
+    .top-menu .top-menu-body .brand a {
+        text-decoration: none;
+        color: var(--color-light-dark);
+        font-family: var(--font-poppins);
+        font-weight: var(--font-weight-bold);
+        font-size: 35px;
+        margin-left: 7rem;
+    }
+/* Top menu navbar */
+    .top-menu .top-menu-body .navbar a {
+        text-decoration: none;
+        color: var(--color-light-dark);
+        font-family: var(--font-poppins);
+        font-weight: var(--font-weight-medium);
+        padding: 1rem;
+        transition: 0.3s ease-in-out;
+    } 
+        .top-menu .top-menu-body .navbar a:hover {
+            color: var(--color-gray-3);
+        }
+
+        .top-menu .top-menu-body .navbar a .navbar-home {
+            color: var(--color-red);
+            transition: 0.3s ease-in-out;
+        }
+            .top-menu .top-menu-body .navbar a .navbar-home:hover {
+               color: var(--color-red-hover)
+            }
+/* Top menu checkout links */
+    .top-menu .top-menu-body .checkout-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 7rem;
+    } 
+        .top-menu .top-menu-body .checkout-links .checkout-links-circle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            background-color: var(--color-white);
+            margin: 0.5rem;
+            box-shadow: 1px 1px 4px 0.1px var(--color-dark);
+            transition: 0.3s ease-in-out;
+        }
+
+            .top-menu .top-menu-body .checkout-links .checkout-links-circle:hover {
+                background-color: var(--color-gray-1);
+            }
+
+                .top-menu .top-menu-body .checkout-links .checkout-links-circle a {
+                    color: var(--color-dark);
+                }
+
+                    .top-menu .top-menu-body .checkout-links .checkout-links-circle #quantity {
+                        position: relative;
+                    }
+                        .top-menu .top-menu-body .checkout-links .checkout-links-circle #quantity .badge {
+                            background-color: var(--color-red);
+                            position: absolute;
+                            top: -1rem;
+                            left: 0.7rem;
+                            font-weight: var(--font-weight-medium);
+                            transition: 0.3s ease-in-out;
+                        }
+                            .top-menu .top-menu-body .checkout-links .checkout-links-circle:hover #quantity .badge {
+                                background-color: var(--color-red-hover)
+                            }
+
+
+/* showcase start */
+.showcase {
+    background-color: var(--color-gray-1);
+}
+    .showcase .showcase-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        .showcase .showcase-body .showcase-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+            .showcase .showcase-body .showcase-text h1 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: var(--font-poppins);
+                font-size: 65px;
+                font-weight: var(--font-weight-extrabold);
+                color: var(--color-light-dark);
+                padding: 1rem;
+            }
+
+            .showcase .showcase-body .showcase-text p {
+                font-family: var(--font-poppins);
+                font-size: 20px;
+                font-weight: var(--font-weight-regular);
+                color: var(--color-light-dark);
+                padding: 1rem;
+            }
+
+            .showcase .showcase-body .showcase-text .btn-red {
+                background-color: var(--color-red);
+                color: var(--color-white);
+                font-family: var(--font-poppins);
+                font-size: 16px;
+                font-weight: var(--font-weight-semibold);
+                padding: 1rem 3rem 1rem 3rem;
+                border: none;
+                transition: 0.3s ease-in-out;
+            }
+                .showcase .showcase-body .showcase-text .btn-red:hover {
+                    background-color: var(--color-red-hover);
+                }
+
+/* webshop info start */
+.webshop-info .webshop-info-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+    /* webshop winter-clearance part */
+    .webshop-info .webshop-info-body .winter-clearance {
+        position: relative;
+    }
+        .webshop-info .webshop-info-body .winter-clearance h1 {
+            position: absolute;
+            top: 180px;
+            left: 40px;
+            font-family: var(--font-poppins);
+            font-size: 45px;
+            font-weight: var(--font-weight-bold);
+        }
+            .webshop-info .webshop-info-body .winter-clearance h1 span {
+                display: block;
+            }
+        .webshop-info .webshop-info-body .winter-clearance p {
+            position: absolute;
+            top: 320px;
+            left: 40px;
+            width: 425px;
+            height: 75px;
+        }
+        .webshop-info .webshop-info-body .winter-clearance button {
+            position: absolute;
+            top: 420px;
+            left: 40px;
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            font-family: var(--font-poppins);
+            font-size: 16px;
+            font-weight: var(--font-weight-semibold);
+            padding: 1rem 3rem 1rem 3rem;
+            border: none;
+            transition: 0.3s ease-in-out;
+        }
+            .webshop-info .webshop-info-body .winter-clearance button:hover {
+               background-color: var(--color-gray-3); 
+            }
+
+    /* webshop new-arrivals part */
+    .webshop-info .webshop-info-body .new-arrivals {
+       position: relative; 
+    }
+        .webshop-info .webshop-info-body .new-arrivals h1 {
+            position: absolute;
+            top: 280px;
+            left: 40px;
+            font-family: var(--font-poppins);
+            font-size: 45px;
+            font-weight: var(--font-weight-bold); 
+        }
+            .webshop-info .webshop-info-body .new-arrivals h1 span {
+                display: block;
+            }
+        .webshop-info .webshop-info-body .new-arrivals button {
+            position: absolute;
+            top: 420px;
+            left: 40px;
+            background-color: var(--color-dark);
+            color: var(--color-white);
+            font-family: var(--font-poppins);
+            font-size: 16px;
+            font-weight: var(--font-weight-semibold);
+            padding: 1rem 3rem 1rem 3rem;
+            border: none;
+            transition: 0.3s ease-in-out;
+        }
+            .webshop-info .webshop-info-body .new-arrivals button:hover {
+                background-color: var(--color-gray-3);
+            }

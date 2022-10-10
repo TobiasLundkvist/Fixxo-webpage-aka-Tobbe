@@ -1,22 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --color-white:      #FFFFFF;
-    --color-gray-0:     #F5F5F5;
-    --color-gray-1:     #E6E6E6;
-    --color-gray-2:     #BEBEBE;
-    --color-gray-3:     #616365;
-    --color-light-dark: #222529; 
-    --color-dark:       #23262A;
-    --color-red:        #FF7373;
-    --color-red-hover:  #ff0000;
+    --color-white:           #FFFFFF;
+    --color-gray-0:          #F5F5F5;
+    --color-gray-1:          #E6E6E6;
+    --color-gray-1-5:        #BBBBBB;
+    --color-gray-2:          #BEBEBE;
+    --color-gray-3:          #616365;
+    --color-light-dark:      #222529; 
+    --color-dark:            #23262A;
+    --color-red:             #FF7373;
+    --color-red-hover:       #ff0000;
 
-    --font-poppins: 'poppins', 'sans-serif';
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold:600;
-    --font-weight-bold: 700;
+    --font-poppins:         'poppins', 'sans-serif';
+    
+    --font-weight-regular:   400;
+    --font-weight-medium:    500;
+    --font-weight-semibold:  600;
+    --font-weight-bold:      700;
     --font-weight-extrabold: 800;
+    
+    --font-size-13:          13px;
+    --font-size-14:          14px;
+    --font-size-16:          16px;
+    --font-size-18:          18px;
+    --font-size-20:          20px;
+    --font-size-45:          45px;
+    --font-size-65:          65px;
 }
 
 /* GENERAL */
@@ -32,8 +42,8 @@ html, body {
     position: absolute;
     top: 10px;
     left: 10px;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     border-left: 2px solid var(--color-white);
     border-top: 2px solid var(--color-white);
 }
@@ -42,8 +52,8 @@ html, body {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    height: 25px;
-    width: 25px;
+    height: 20px;
+    width: 20px;
     border-right: 2px solid var(--color-white);
     border-bottom: 2px solid var(--color-white); 
 }
@@ -72,6 +82,7 @@ html, body {
         text-decoration: none;
         color: var(--color-light-dark);
         font-family: var(--font-poppins);
+        font-size: var(--font-size-16);
         font-weight: var(--font-weight-medium);
         padding: 1rem;
         transition: 0.3s ease-in-out;
@@ -152,7 +163,7 @@ html, body {
                 justify-content: center;
                 align-items: center;
                 font-family: var(--font-poppins);
-                font-size: 65px;
+                font-size: var(--font-size-65);
                 font-weight: var(--font-weight-extrabold);
                 color: var(--color-light-dark);
                 padding: 1rem;
@@ -160,7 +171,7 @@ html, body {
 
             .showcase .showcase-body .showcase-text p {
                 font-family: var(--font-poppins);
-                font-size: 20px;
+                font-size: var(--font-size-20);
                 font-weight: var(--font-weight-regular);
                 color: var(--color-light-dark);
                 padding: 1rem;
@@ -171,7 +182,7 @@ html, body {
                 background-color: var(--color-red);
                 color: var(--color-white);
                 font-family: var(--font-poppins);
-                font-size: 16px;
+                font-size: var(--font-size-16);
                 font-weight: var(--font-weight-semibold);
                 padding: 1.2rem 3.5rem 1.2rem 3.5rem;
                 border: none;
@@ -189,73 +200,73 @@ html, body {
     margin-top: 4rem;
 }
     /* webshop winter-clearance part */
-    .webshop-info .webshop-info-body .winter-clearance {
+    .webshop-info .webshop-info-body .webshop-info-body-1 {
         position: relative;
     }
-        .webshop-info .webshop-info-body .winter-clearance h1 {
+        .webshop-info .webshop-info-body .webshop-info-body-1 h1 {
             position: absolute;
             top: 180px;
             left: 40px;
             font-family: var(--font-poppins);
-            font-size: 45px;
+            font-size: var(--font-size-45);
             font-weight: var(--font-weight-bold);
         }
-            .webshop-info .webshop-info-body .winter-clearance h1 span {
+            .webshop-info .webshop-info-body .webshop-info-body-1 h1 span {
                 display: block;
             }
-        .webshop-info .webshop-info-body .winter-clearance p {
+        .webshop-info .webshop-info-body .webshop-info-body-1 p {
             position: absolute;
             top: 320px;
             left: 40px;
             width: 425px;
             height: 75px;
         }
-        .webshop-info .webshop-info-body .winter-clearance button {
+        .webshop-info .webshop-info-body .webshop-info-body-1 button {
             position: absolute;
             top: 420px;
             left: 40px;
             background-color: var(--color-dark);
             color: var(--color-white);
             font-family: var(--font-poppins);
-            font-size: 16px;
+            font-size: var(--font-size-16);
             font-weight: var(--font-weight-semibold);
             padding: 1rem 3rem 1rem 3rem;
             border: none;
             transition: 0.3s ease-in-out;
         }
-            .webshop-info .webshop-info-body .winter-clearance button:hover {
+            .webshop-info .webshop-info-body .webshop-info-body-1 button:hover {
                background-color: var(--color-gray-3); 
             }
 
     /* webshop new-arrivals part */
-    .webshop-info .webshop-info-body .new-arrivals {
+    .webshop-info .webshop-info-body .webshop-info-body-2 {
        position: relative; 
     }
-        .webshop-info .webshop-info-body .new-arrivals h1 {
+        .webshop-info .webshop-info-body .webshop-info-body-2 h1 {
             position: absolute;
             top: 280px;
             left: 40px;
             font-family: var(--font-poppins);
-            font-size: 45px;
+            font-size: var(--font-size-45);
             font-weight: var(--font-weight-bold); 
         }
-            .webshop-info .webshop-info-body .new-arrivals h1 span {
+            .webshop-info .webshop-info-body .webshop-info-body-2 h1 span {
                 display: block;
             }
-        .webshop-info .webshop-info-body .new-arrivals button {
+        .webshop-info .webshop-info-body .webshop-info-body-2 button {
             position: absolute;
             top: 420px;
             left: 40px;
             background-color: var(--color-dark);
             color: var(--color-white);
             font-family: var(--font-poppins);
-            font-size: 16px;
+            font-size: var(--font-size-16);
             font-weight: var(--font-weight-semibold);
             padding: 1.2rem 3.5rem 1.2rem 3.5rem;
             border: none;
             transition: 0.3s ease-in-out;
         }
-            .webshop-info .webshop-info-body .new-arrivals button:hover {
+            .webshop-info .webshop-info-body .webshop-info-body-2 button:hover {
                 background-color: var(--color-gray-3);
             }
 
@@ -266,7 +277,7 @@ html, body {
     margin-top: 4rem;
     margin-bottom: 2rem;
     font-family: var(--font-poppins);
-    font-size: 20px;
+    font-size: var(--font-size-20);
     font-weight: var(--font-weight-bold);
     color: var(--color-light-dark)
 }
@@ -303,24 +314,45 @@ html, body {
                         display: flex;
                         justify-content: center;
                         align-items: center;
+                        position: relative;
+                        left: 170px;
                         height: 36px;
                         width: 36px;
                         border-radius: 50%;
                         background-color: var(--color-white);
                         list-style: none;
-                        margin: 0.5rem;
+                        margin: 0.4rem;
+                        transition: 0.3s ease-in-out;
                     }
-                        .the-product .product-card .rektangeln .card-menu li i {
-                            color: var(--color-dark);
+                        .the-product .product-card .rektangeln .card-menu li:hover {
+                            background-color: var(--color-dark);
+
                         }
+                            .the-product .product-card .rektangeln .card-menu li i {
+                                color: var(--color-dark);
+                                transition: 0.3s ease-in-out;
+                            }
+                                .the-product .product-card .rektangeln .card-menu li:hover i {
+                                    color: var(--color-white);
+                                }
 
                         .the-product .product-card .rektangeln button {
+                        position: absolute;
                         width: 255px;
                         height: 50px;
                         background-color: var(--color-red);
                         color: var(--color-white);
                         border: none;
+                        font-family: var(--font-poppins);
+                        font-size: var(--font-size-14);
+                        font-weight: var(--font-weight-regular);
+                        transition: 0.3s ease-in-out;
                     }
+                        .the-product .product-card .rektangeln button:hover {
+                            background-color: var(--color-red-hover);
+                        }
+
+
         .the-product .card-body {
             display: flex;
             flex-direction: column;
@@ -330,14 +362,14 @@ html, body {
 
             .the-product .card-body div {
                 font-family: var(--font-poppins);
-                font-size: 13px;
+                font-size: var(--font-size-13);
                 font-weight: var(--font-weight-medium);
                 color: var(--color-gray-3);
                 margin: 0.2rem;
             }
             .the-product .card-body p {
                 font-family: var(--font-poppins);
-                font-size: 16px;
+                font-size: var(--font-size-16);
                 font-weight: var(--font-weight-semibold);
                 color: var(--color-dark);
                 margin-bottom: 0.2rem;
@@ -348,14 +380,14 @@ html, body {
             }
             .the-product .card-body .price {
                 font-family: var(--font-poppins);
-                font-size: 18px;
+                font-size: var(--font-size-18);
                 font-weight: var(--font-weight-semibold);
                 color: var(--color-dark)
             }
                 .the-product .card-body .price span {
                     text-decoration: line-through;
                     font-family: var(--font-poppins);
-                    font-size: 16px;
+                    font-size: var(--font-size-16);
                     font-weight: var(--font-weight-regular);
                     color: var(--color-gray-3);
                 }
@@ -364,3 +396,103 @@ html, body {
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
     }
+
+
+/* webshop info  start */
+.webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 {
+    margin: 0.7rem;
+}
+    .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 h1 {
+        top: 100px;
+        left: 480px;
+        color: var(--color-white);
+    }
+        .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 h1 span {
+            display: block;
+        }
+
+        .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 button {
+            left: 480px;
+            top: 250px;
+        }
+.webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 {
+    margin: 0.7rem;
+}
+    .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 h1 {
+        top: 100px;
+    }
+    .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button {
+        top: 250px;
+        background-color: var(--color-white);
+        color: var(--color-dark);
+    }
+        .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button:hover {
+            background-color: var(--color-gray-1);
+
+        }
+            .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button .corner-top-left {
+                border-left: 2px solid var(--color-dark);
+                border-top: 2px solid var(--color-dark);
+            }
+            .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button .corner-bottom-right {
+                border-right: 2px solid var(--color-dark);
+                border-bottom: 2px solid var(--color-dark);
+            }
+
+
+.speciality-background {
+    background-color: var(--color-gray-0);
+    height: 410px;
+    margin-top: 2rem;
+    margin-left: 6.5rem;
+    margin-right: 6.5rem;
+}
+    .speciality-background .speciality-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-poppins);
+        font-size: var(--font-size-20);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-light-dark);
+        padding-top: 3rem;
+    }
+
+        .speciality-background .speciality-body {
+           display: flex; 
+           justify-content: space-evenly;
+           align-items: center;
+           margin-top: 2rem;
+        }
+            .speciality-background .speciality-text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            } 
+                .speciality-background .speciality-text .speciality-info {
+                    height: 245px;
+                    width: 245px;
+                    background-color: var(--color-white);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    padding-left: 2.3rem;
+                }
+                    .speciality-background .speciality-text .speciality-info h3 {
+                        font-family: var(--font-poppins);
+                        font-size: var(--font-size-20);
+                        font-weight: var(--font-weight-semibold);
+                        color: var(--color-light-dark);
+                    }
+                    .speciality-background .speciality-text .speciality-info a {
+                        font-family: var(--font-poppins);
+                        font-size: var(--font-size-16);
+                        font-weight: var(--font-weight-semibold);
+                        color: var(--color-dark);
+                    }
+                .speciality-background .speciality-text div {
+                    height: 245px;
+                    width: 245px;
+                    background-color: var(--color-gray-1-5);
+                }

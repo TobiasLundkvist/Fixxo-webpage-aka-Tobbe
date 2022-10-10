@@ -58,6 +58,22 @@ html, body {
     border-bottom: 2px solid var(--color-white); 
 }
 
+.btn {
+    position: relative;
+    background-color: var(--color-white);
+    color: var(--color-light-dark);
+    font-family: var(--font-poppins);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-semibold);
+    padding: 1.2rem 3.5rem 1.2rem 3.5rem;
+    border: none;
+    border-radius: 0;
+    transition: 0.3s ease-in-out;
+}
+.btn:hover {
+    background-color: var(--color-gray-1);
+}
+
 /* Top menu start */
 .top-menu {
     background-color: var(--color-gray-1);
@@ -365,7 +381,8 @@ html, body {
                 font-size: var(--font-size-13);
                 font-weight: var(--font-weight-medium);
                 color: var(--color-gray-3);
-                margin: 0.2rem;
+                margin-top: 0.2rem;
+                margin-bottom: 0.2rem;
             }
             .the-product .card-body p {
                 font-family: var(--font-poppins);
@@ -484,6 +501,7 @@ html, body {
                         font-size: var(--font-size-20);
                         font-weight: var(--font-weight-semibold);
                         color: var(--color-light-dark);
+                        padding-bottom: 0.6rem;
                     }
                     .speciality-background .speciality-text .speciality-info a {
                         font-family: var(--font-poppins);
@@ -496,3 +514,58 @@ html, body {
                     width: 245px;
                     background-color: var(--color-gray-1-5);
                 }
+
+.twofor {
+    display: flex;
+    margin-left: 6.5rem;
+    margin-top: 2rem;
+}
+
+    .twofor .twofor-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 825px;
+        height: 664px;
+        background-color: var(--color-gray-1-5);
+        margin-right: 2rem;
+    }
+        .twofor .twofor-body .twofor-text {
+            font-family: var(--font-poppins);
+            font-size: var(--font-size-45);
+            font-weight: var(--font-weight-bold);
+            color: var(--color-white);
+            padding: 2rem;
+        }
+            .twofor .twofor-body .corner-top-left {
+                border-top: 2px solid var(--color-light-dark);
+                border-left: 2px solid var(--color-light-dark);
+
+            }
+            .twofor .twofor-body .corner-bottom-right {
+                border-bottom: 2px solid var(--color-light-dark);
+                border-right: 2px solid var(--color-light-dark);
+            }
+.twofor .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 2rem;
+}
+
+    .twofor .grid-2 .the-product .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+.twofor-2 .twofor {
+    display: flex;
+    justify-content: end;
+    margin-right: 4rem;
+}
+    .twofor-2 .twofor .grid-2 {
+        margin-right: 2rem;
+    }

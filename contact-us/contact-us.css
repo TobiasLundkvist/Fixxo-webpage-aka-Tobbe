@@ -170,7 +170,7 @@ section > .container > div {
     font-family: var(--font-poppins);
     font-size: var(--font-size-18);
     font-weight: var(--font-weight-bold);
-    color:var(--color-light-dark);
+    color: var(--color-light-dark);
     margin-bottom: 1.5rem;
 }
 

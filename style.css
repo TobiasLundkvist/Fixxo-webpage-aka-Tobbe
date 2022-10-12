@@ -123,7 +123,7 @@ html, body {
             transition: 0.3s ease-in-out;
         }
             .top-menu .top-menu-body .navbar a .navbar-home:hover {
-            color: var(--color-red-hover)
+                color: var(--color-red-hover)
             }
 /* Top menu checkout links */
     .top-menu .top-menu-body .checkout-links {
@@ -169,7 +169,6 @@ html, body {
 
 
 /* showcase start */
-
 .showcase .showcase-body {
     display: flex;
     justify-content: space-evenly;
@@ -441,40 +440,54 @@ html, body {
 
 
 /* webshop info  start */
-.webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 h1 {
-    top: 100px;
-    left: 480px;
-    color: var(--color-white);
+.webshop-2 .webshop-info .webshop-info-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-    .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 h1 span {
-        display: block;
+
+    .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 {
+        margin-left: -0.75rem;
     }
 
-    .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 button {
+    .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 h1 {
+        top: 100px;
         left: 480px;
-        top: 250px;
+        color: var(--color-white);
+    }
+        .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 h1 span {
+            display: block;
+        }
+
+        .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-1 button {
+            left: 480px;
+            top: 250px;
+        }
+
+    .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 {
+        margin-right: -0.75rem;
     }
 
-.webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 h1 {
-    top: 100px;
-}
-.webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button {
-    top: 250px;
-    background-color: var(--color-white);
-    color: var(--color-dark);
-}
-    .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button:hover {
-        background-color: var(--color-gray-1);
+        .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 h1 {
+            top: 100px;
+        }
+        .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button {
+            top: 250px;
+            background-color: var(--color-white);
+            color: var(--color-dark);
+        }
+            .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button:hover {
+                background-color: var(--color-gray-1);
 
-    }
-        .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button .corner-top-left {
-            border-left: 2px solid var(--color-dark);
-            border-top: 2px solid var(--color-dark);
-        }
-        .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button .corner-bottom-right {
-            border-right: 2px solid var(--color-dark);
-            border-bottom: 2px solid var(--color-dark);
-        }
+            }
+                .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button .corner-top-left {
+                    border-left: 2px solid var(--color-dark);
+                    border-top: 2px solid var(--color-dark);
+                }
+                .webshop-2 .webshop-info .webshop-info-body .webshop-info-body-2 button .corner-bottom-right {
+                    border-right: 2px solid var(--color-dark);
+                    border-bottom: 2px solid var(--color-dark);
+                }
 
 
 .speciality-background {
@@ -546,7 +559,8 @@ html, body {
         width: 825px;
         height: 664px;
         background-color: var(--color-gray-1-5);
-        margin-right: 2rem;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
     }
         .twofor .twofor-body .twofor-text {
             font-family: var(--font-poppins);
@@ -569,6 +583,8 @@ html, body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 2rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
 
     .twofor .grid-2 .the-product .card-body {
@@ -581,8 +597,5 @@ html, body {
 .twofor-2 .twofor {
     display: flex;
     justify-content: end;
-    margin-right: 4rem;
+
 }
-    .twofor-2 .twofor .grid-2 {
-        margin-right: 2rem;
-    }

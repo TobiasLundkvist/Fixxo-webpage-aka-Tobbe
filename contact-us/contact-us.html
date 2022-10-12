@@ -10,9 +10,10 @@
     <link href="./contact-us.css" rel="stylesheet">
 </head>
 <body>
+<!-- Top menu start -->
     <header>
         <nav class="top-menu">
-           <div class="container-fluid">
+           <div class="container">
                 <div class="top-menu-body">
                     <!-- Top menu brand -->
                     <div class="brand">
@@ -50,16 +51,36 @@
            </div> 
         </nav>     
     </header>
-    <section>
+
+    <section class="breadcrumb">
         <div class="container">
-            <div><i class="fa-duotone fa-house"></i> Contacts</div>
+            <ul class="breadcrumb-list">
+                <li><a href="../index.html"><i class="fa-duotone fa-house"></i></a></li>
+                <li> Contacts</li>
+            </ul>
         </div>
     </section>
-    <section>
-        <div>
-            <img src="../images/contact-us-map.svg" alt="">
+
+
+    <section class="map">
+        <iframe class="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16323.027956894945!2d15.150735419762121!3d59.24311577744098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465c14ce5262c35d%3A0x35322003293cc49e!2sEC%20Utbildning%20%C3%96rebro!5e0!3m2!1ssv!2sse!4v1665595067897!5m2!1ssv!2sse" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section class="contact">
+        <div class="container">
+            <h2>Come in Contact with Us</h2>
+            <form>
+                <input id="text" type="text" name="">
+                <input id="email" type="email" name="">
+                <textarea id="comments" name=""></textarea>
+                <button type="submit"></button> 
+            </form>
+
         </div>
     </section>
+
+
+
 
     <div class="container mt-5">
         <form>

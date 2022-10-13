@@ -2,6 +2,7 @@
 
 :root {
     --color-white:           #FFFFFF;
+    --color-footer:          #F8F8F8;
     --color-gray-0:          #F5F5F5;
     --color-gray-1:          #E6E6E6;
     --color-gray-1-5:        #BBBBBB;
@@ -206,42 +207,78 @@ html, body {
         max-width: 1110px;
     }
 
-/* min del nedan */
-
-.contact-us h1 {
-    font-family: var(--font-poppins);
-    font-size: var(--font-size-18);
-    font-weight: var(--font-weight-bold);
-    color: var(--color-light-dark);
-    margin-bottom: 1.5rem;
-}
-
-    .contact-us #contact-us-form .contact_us_name {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .contact h2 {
+        font-family: var(--font-poppins);
+        font-size: var(--font-size-18);
+        font-weight: var(--font-weight-bold);
+        color: var(--color-light-dark);
+        margin-bottom: 2rem;
     }
-
-        .contact-us #contact-us-form span .contact_name {
-            width: 630px;
-            padding: 1rem;
-
-            
-        }
-        .contact-us #contact-us-form span .contact_email {
-            width: 630px;
-            padding: 1rem;
-
-        }
-        .contact-us #contact-us-form .contact_us_comments {
-            margin-top: 1.5rem;
+    .contact .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+        .contact .contact-form .errorMessage {
+           margin-top: 5px;
+           color: var(--color-red);
+           font-size: 0.8em; 
         }
 
-        .contact-us #contact-us-form .btn {
-            background-color: var(--color-red);
-            color: var(--color-white);
-            font-family: var(--font-poppins);
-            font-size: var(--font-size-16);
-            font-weight: var(--font-weight-semibold);
-            margin-top: 1.5rem;
+        .contact .contact-form .error {
+            color: var(--color-red);
+            border: 1px solid var(--color-red);
+ 
         }
+
+        .contact .contact-form input {
+            padding: 18px 20px;
+            border: 1px solid var(--color-gray-1-5);
+            width: 100%;
+        }
+
+        .contact .contact-form .textarea {
+            grid-column: 1 / -1;
+        }
+
+        .contact .contact-form textarea {
+            padding: 18px 20px;
+            border: 1px solid var(--color-gray-1-5);
+            resize: none;
+            min-height: 140px;
+            width: 100%;
+        }
+            .contact .contact-form div button {
+                background-color: var(--color-red);
+                color: var(--color-white);
+                width: 200px;
+                height: 50px;
+                padding: 0;
+            }
+
+                .contact .contact-form div button:hover {
+                    background-color: var(--color-red-hover);
+                }
+
+footer {
+    background-color: var(--color-gray-0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+    footer .socialmedia {
+        margin-bottom: 25px;
+    }
+        footer .socialmedia i {
+            font-size: var(--font-size-20);
+            color: var(--color-dark);
+            margin-left: 10px;
+            margin-right: 10px;
+
+        }
+
+
+

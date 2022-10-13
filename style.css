@@ -599,3 +599,21 @@ html, body {
     justify-content: end;
 
 }
+
+footer {
+    background-color: var(--color-gray-0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+    footer .socialmedia {
+        margin-bottom: 25px;
+    }
+        footer .socialmedia i {
+            font-size: var(--font-size-20);
+            color: var(--color-dark);
+            margin-left: 10px;
+            margin-right: 10px;
+        }

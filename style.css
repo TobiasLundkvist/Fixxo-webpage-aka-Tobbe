@@ -600,6 +600,9 @@ html, body {
 
 }
 
+
+
+
 footer {
     background-color: var(--color-gray-0);
     display: flex;
@@ -617,3 +620,97 @@ footer {
             margin-left: 10px;
             margin-right: 10px;
         }
+
+
+
+
+
+
+/* Contact us sidan nedan */
+        .breadcrumb {
+            margin-top: 20px;
+        }                            
+            .breadcrumb .container {
+                max-width: 1110px;
+            }
+                .breadcrumb .breadcrumb-list {
+                    list-style: none;
+                    margin: 0 0 40px 0;
+                    padding: 0;
+                }
+                    .breadcrumb .breadcrumb-list li {
+                        display: inline-block;
+                        font-family: var(--font-poppins);
+                        font-size: var(--font-size-16);
+                        font-weight: var(--font-weight-medium);
+                        color: var(--color-dark);
+                    }
+        
+        .map {
+            margin-bottom: 4rem;
+        }
+            .map .google-map {
+                width: 100%;
+                height: 380px;
+            }
+        
+        .contact {
+            margin-top: 4rem;
+        }
+            .contact .container {
+                max-width: 1110px;
+            }
+        
+            .contact h2 {
+                font-family: var(--font-poppins);
+                font-size: var(--font-size-18);
+                font-weight: var(--font-weight-bold);
+                color: var(--color-light-dark);
+                margin-bottom: 2rem;
+            }
+            .contact .contact-form {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 40px;
+                margin-bottom: 60px;
+            }
+                .contact .contact-form .errorMessage {
+                   margin-top: 5px;
+                   color: var(--color-red);
+                   font-size: 0.8em; 
+                }
+        
+                .contact .contact-form .error {
+                    color: var(--color-red);
+                    border: 1px solid var(--color-red);
+         
+                }
+        
+                .contact .contact-form input {
+                    padding: 18px 20px;
+                    border: 1px solid var(--color-gray-1-5);
+                    width: 100%;
+                }
+        
+                .contact .contact-form .textarea {
+                    grid-column: 1 / -1;
+                }
+        
+                .contact .contact-form textarea {
+                    padding: 18px 20px;
+                    border: 1px solid var(--color-gray-1-5);
+                    resize: none;
+                    min-height: 140px;
+                    width: 100%;
+                }
+                    .contact .contact-form div button {
+                        background-color: var(--color-red);
+                        color: var(--color-white);
+                        width: 200px;
+                        height: 50px;
+                        padding: 0;
+                    }
+        
+                        .contact .contact-form div button:hover {
+                            background-color: var(--color-red-hover);
+                        }

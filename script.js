@@ -43,6 +43,18 @@ const checkEmail = (element, message) => {
     }
 }
 
+const checkName = (element, message) => {
+    if(message === undefined)
+        message = `Your ${element.target.id} can not contain numbers`
+
+    if(!element.target.value.match(/[A-Za-z]{3}/)) {
+        document.getElementById(element.target.id).classList.add('error')
+        document.getElementById(`${element.target.id}ErrorMessage`).innerText = message
+    } else {
+        document.getElementById(element.target.id).classList.remove('error')
+        document.getElementById(`${element.target.id}ErrorMessage`).innerText = ''
+    }
+}
 
 
 const validate = (e) => {
